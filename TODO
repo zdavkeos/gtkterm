@@ -3,3 +3,4 @@
   - Update documentation and version info
   - Test on all platforms
   - Refactor the build to use gtk autogen
+  - Update translations

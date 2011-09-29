@@ -366,7 +366,7 @@ void create_main_window(void)
   toggle_logging_pause_resume(FALSE);
   toggle_logging_sensitivity(FALSE);
 
-  /* status bar */
+  /* hex box is hidden when not in use */
   Hex_Box = gtk_hbox_new(TRUE, 0);
   Label = gtk_label_new(_("Hexadecimal data to send (separator : ';' or space) : "));
   gtk_box_pack_start_defaults(GTK_BOX(Hex_Box), Label);
@@ -375,36 +375,34 @@ void create_main_window(void)
   gtk_box_pack_start(GTK_BOX(Hex_Box), Hex_Send_Entry, FALSE, TRUE, 5);
   gtk_box_pack_start(GTK_BOX(Boite), Hex_Box, FALSE, TRUE, 2);
 
-  BoiteH = gtk_hbox_new(FALSE, 0);
-  gtk_box_pack_start(GTK_BOX(Boite), BoiteH, FALSE, FALSE, 0);
-
+  /* status bar */
   StatusBar = gtk_statusbar_new();
-  gtk_box_pack_start(GTK_BOX(BoiteH), StatusBar, TRUE, TRUE, 0);
+  gtk_box_pack_start(GTK_BOX(Boite), StatusBar, FALSE, FALSE, 0);
   id = gtk_statusbar_get_context_id(GTK_STATUSBAR(StatusBar), "Messages");
 
   Label = gtk_label_new("RI");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   gtk_widget_set_sensitive(GTK_WIDGET(Label), FALSE);
   signals[0] = Label;
 
   Label = gtk_label_new("DSR");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   signals[1] = Label;
 
   Label = gtk_label_new("CD");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   signals[2] = Label;
 
   Label = gtk_label_new("CTS");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   signals[3] = Label;
 
   Label = gtk_label_new("RTS");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   signals[4] = Label;
 
   Label = gtk_label_new("DTR");
-  gtk_box_pack_end(GTK_BOX(BoiteH), Label, FALSE, TRUE, 5);
+  gtk_box_pack_end(GTK_BOX(StatusBar), Label, FALSE, TRUE, 5);
   signals[5] = Label;
 
   g_signal_connect_after(GTK_OBJECT(display), "commit", G_CALLBACK(Got_Input), NULL);
