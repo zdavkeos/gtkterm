@@ -117,7 +117,7 @@ int Send_chars(char *string, int length)
         return 0;
 
     if(serial_port_fd == -1)
-        return 0
+        return 0;
 
     /* RS485 half-duplex mode ? */
     if( config.flux==3 )
