@@ -1,6 +1,6 @@
 2010-11-10  gettextize  <bug-gnu-gettext@gnu.org>
 
-	* Released gtkterm 0.99.7	**-&&&-2011
+	* Released gtkterm 0.99.7-rc1	30-oct-2011
 		Added software support for RS485 - see README (thanks to Marc Le Douarain)
 		Updated many of the GTK widgets
 		Cleaned up auto-crlf stuff
