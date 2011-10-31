@@ -438,59 +438,64 @@ gint create_lockfile(char *port)
     username = (getpwuid(real_uid))->pw_name;
 
     /* First see if the lock file directory is present. */
-    if(P_LOCK[0] && stat(P_LOCK, &stt) == 0)
-	snprintf(lockfile, sizeof(lockfile), "%s/LCK..%s", P_LOCK, mbasename(port, buf, sizeof(buf)));
-    else
-	lockfile[0] = 0;
+    if(P_LOCK[0] && stat(P_LOCK, &stt) == 0) {
+        snprintf(lockfile, sizeof(lockfile), "%s/LCK..%s", P_LOCK, mbasename(port, buf, sizeof(buf)));
+    } else {
+        lockfile[0] = 0;
+    }
 
     if(lockfile[0] && (fd = open(lockfile, O_RDONLY)) >= 0)
     {
-	n = read(fd, buf, 127);
-	close(fd);
-	if(n > 0)
-	{
-	    pid = -1;
-	    if(n == 4)
-		/* Kermit-style lockfile. */
-		pid = *(int *)buf;
-	    else {
-		/* Ascii lockfile. */
-		buf[n] = 0;
-		sscanf(buf, "%d", &pid);
-	    }
-	    if(pid > 0 && kill((pid_t)pid, 0) < 0 && errno == ESRCH)
-	    {
-		i18n_fprintf(stderr, _("Lockfile is stale. Overriding it..\n"));
-		sleep(1);
-		unlink(lockfile);
-	    }
-	    else
-		n = 0;
+        n = read(fd, buf, 127);
+        close(fd);
+        if(n > 0)
+        {
+            pid = -1;
+            if(n == 4) {
+                /* Kermit-style lockfile. */
+                pid = *(int *)buf;
+            } else {
+                /* Ascii lockfile. */
+                buf[n] = 0;
+                sscanf(buf, "%d", &pid);
+            }
+            if(pid > 0 && kill((pid_t)pid, 0) < 0 && errno == ESRCH)
+            {
+                i18n_fprintf(stderr, _("Lockfile is stale. Overriding it..\n"));
+                sleep(1);
+                unlink(lockfile);
+            } else {
+                n = 0;
+            }
         }
 
-	if(n == 0)
-	{
-	    i18n_fprintf(stderr, _("Device %s is locked.\n"), port);
-	    lockfile[0] = 0;
-	    return -1;
-	}
+        if(n == 0)
+        {
+            i18n_fprintf(stderr, _("Device %s is locked.\n"), port);
+            lockfile[0] = 0;
+            return -1;
+        }
     }
 
     if(lockfile[0])
     {
-	/* Create lockfile compatible with UUCP-1.2 */
-	mask = umask(022);
-	if((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0)
-	{
-	    i18n_fprintf(stderr, _("Cannot create lockfile. Sorry.\n"));
-	    lockfile[0] = 0;
-	    return -1;
+        /* Create lockfile compatible with UUCP-1.2 */
+        mask = umask(022);
+        if((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0)
+        {
+            i18n_fprintf(stderr, 
+                         _("Cannot create lockfile: %s\n"), 
+                         strerror_utf8(errno));
+
+            lockfile[0] = 0;
+            return -1;
         }
-	(void)umask(mask);
-	res = chown(lockfile, real_uid, real_gid);
-	snprintf(buf, sizeof(buf), "%10ld gtkterm %.20s\n", (long)getpid(), username);
-	res = write(fd, buf, strlen(buf));
-	close(fd);
+
+        (void)umask(mask);
+        res = chown(lockfile, real_uid, real_gid);
+        snprintf(buf, sizeof(buf), "%10ld gtkterm %.20s\n", (long)getpid(), username);
+        res = write(fd, buf, strlen(buf));
+        close(fd);
     }
 
     return 0;
