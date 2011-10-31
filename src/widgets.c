@@ -536,25 +536,16 @@ gboolean Envoie_car(GtkWidget *widget, GdkEventKey *event, gpointer pointer)
 
 gint a_propos(GtkWidget *widget, guint param)
 {
-  GtkWidget *Dialogue, *Label, *Bouton;
-  gchar *chaine;
 
-  Dialogue = gtk_dialog_new();
-  gtk_window_set_title(GTK_WINDOW(Dialogue), _("About..."));
-  Bouton = gtk_button_new_from_stock (GTK_STOCK_OK);
-  gtk_signal_connect_object(GTK_OBJECT(Bouton), "clicked", (GtkSignalFunc)gtk_widget_destroy, GTK_OBJECT(Dialogue));
-  gtk_signal_connect(GTK_OBJECT(Dialogue), "destroy", (GtkSignalFunc)gtk_widget_destroy, NULL);
-  gtk_signal_connect(GTK_OBJECT(Dialogue), "delete_event", (GtkSignalFunc)gtk_widget_destroy, NULL);
-  gtk_box_pack_start(GTK_BOX(GTK_DIALOG(Dialogue)->action_area), Bouton, TRUE, TRUE, 0);
-
-  Label = gtk_label_new("");
-  chaine = g_strdup_printf(_("\n <big><i> GTKTerm V. %s </i></big> \n\n\t(c) Julien Schmitt\n\thttp://www.jls-info.com/julien/linux\n\n\tLatest Version Available on:\n\thttps://fedorahosted.org/gtkterm/"), VERSION);
-  gtk_label_set_markup(GTK_LABEL(Label), chaine);
-  g_free(chaine);
-  gtk_label_set_selectable(GTK_LABEL(Label), TRUE);
-  gtk_box_pack_start(GTK_BOX(GTK_DIALOG(Dialogue)->vbox), Label, TRUE, TRUE, 0);
-
-  gtk_widget_show_all(Dialogue);
+  gchar *authors[] = {"Julien Schmitt", "Zach Davis"};
+  gtk_show_about_dialog(NULL,
+                        "program-name", "GtkTerm",
+                        "title", _("About GtkTerm"),
+                        "authors", authors,
+                        "version", VERSION,
+                        "license", "GPL V.2",
+                        "website", "https://fedorahosted.org/gtkterm/",
+                        "website-label", "GtkTerm Homepage", NULL);
 
   return FALSE;
 }
