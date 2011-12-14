@@ -483,22 +483,26 @@ gint create_lockfile(char *port)
         mask = umask(022);
         if((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0)
         {
-            i18n_fprintf(stderr, 
-                         _("Cannot create lockfile: %s\n"), 
-                         strerror_utf8(errno));
-
             lockfile[0] = 0;
-            return -1;
+            goto error;
         }
 
         (void)umask(mask);
         res = chown(lockfile, real_uid, real_gid);
+        if(res != 0) goto error;
         snprintf(buf, sizeof(buf), "%10ld gtkterm %.20s\n", (long)getpid(), username);
         res = write(fd, buf, strlen(buf));
+        if(res == -1) goto error;
         close(fd);
     }
 
     return 0;
+
+error:
+    i18n_fprintf(stderr, 
+                 _("Cannot create lockfile: %s\n"), 
+                 strerror_utf8(errno));    
+    return -1;
 }
 
 void remove_lockfile(void)

@@ -310,11 +310,9 @@ static gboolean Delete_shortcut(GtkWidget *button, gpointer pointer)
 
   if (gtk_tree_selection_get_selected (selection, NULL, &iter))
     {
-      gint i;
       GtkTreePath *path;
 
       path = gtk_tree_model_get_path(model, &iter);
-      i = gtk_tree_path_get_indices(path)[0];
       gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
 
       gtk_tree_path_free (path);
@@ -395,11 +393,9 @@ static gboolean key_pressed(GtkWidget *window, GdkEventKey *key, gpointer pointe
 
   if(gtk_tree_selection_get_selected(selection, NULL, &iter))
     {
-      gint i;
       GtkTreePath *path;
 
       path = gtk_tree_model_get_path(model, &iter);
-      i = gtk_tree_path_get_indices(path)[0];
       str = gtk_accelerator_name(key->keyval, key->state & ~GDK_MOD2_MASK);
       gtk_list_store_set(GTK_LIST_STORE (model), &iter, COLUMN_SHORTCUT, str, -1);
 
