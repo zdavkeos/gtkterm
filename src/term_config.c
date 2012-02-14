@@ -186,6 +186,7 @@ gint Config_Port_Fenetre(GtkWidget *widget, guint param)
 
     Dialogue = gtk_dialog_new();
     gtk_window_set_title(GTK_WINDOW(Dialogue), _("Configuration"));
+    gtk_window_set_resizable(GTK_WINDOW(Dialogue), FALSE);
     gtk_container_set_border_width(GTK_CONTAINER(GTK_DIALOG(Dialogue)->vbox), 5);
 
     Frame = gtk_frame_new(_("Serial port"));
