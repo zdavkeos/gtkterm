@@ -472,10 +472,7 @@ gint Lis_Config(GtkWidget *bouton, GtkWidget **Combos)
     else
 	config.car = -1;
 
-    message = Config_port();
-    if(message == NULL)
-	message = g_strdup_printf(_("No open port"));
-    g_free(message);
+    Config_port();
 
     message = get_port_string();
     Set_status_message(message);
@@ -797,12 +794,9 @@ void load_config(GtkDialog *Fenetre, gint id, GtkTreeSelection *Selection_Liste)
 	    gtk_tree_model_get(GTK_TREE_MODEL(Modele), &iter, 0, (gint *)&txt, -1);
 	    Load_configuration_from_file(txt);
 	    Verify_configuration();
-	    message = Config_port();
+	    Config_port();
 	    Set_Font();
 	    add_shortcuts();
-	    if(message == NULL)
-		message = g_strdup_printf(_("No open port"));
-	    g_free(message);
 
 	    message = get_port_string();
 	    Set_status_message(message);
