@@ -179,9 +179,9 @@ gint Config_Port_Fenetre(GtkWidget *widget, guint param)
     if(liste == NULL)
     {
 	show_message(_("No serial devices found!\n\n"
-		       "Search all of these devices:\n"
-		       "/dev/ttyS*\n/dev/tts/*\n/dev/ttyUSB*\n/dev/usb/tts/*\n\n"
-		       "Enter a different device in the 'Port' box.\n"), MSG_WRN);
+		       "Searched the following paths:\n"
+		       "\t/dev/ttyS*\n\t/dev/tts/*\n\t/dev/ttyUSB*\n\t/dev/usb/tts/*\n\n"
+		       "Enter a different device path in the 'Port' box.\n"), MSG_WRN);
     }
 
     Dialogue = gtk_dialog_new();
