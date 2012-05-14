@@ -254,7 +254,48 @@ gint Config_Port_Fenetre(GtkWidget *widget, guint param)
     gtk_combo_box_append_text(GTK_COMBO_BOX(Combo), "57600");
     gtk_combo_box_append_text(GTK_COMBO_BOX(Combo), "115200");
 
-    gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 5); //default 9600
+    /* set the current choice to the previous setting */
+    switch(config.vitesse)
+    {
+       case 300:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 0);
+           break;
+       case 600:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 1);
+           break;
+       case 1200:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 2);
+           break;
+       case 2400:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 3);
+           break;
+       case 4800:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 4);
+           break;
+       case 9600:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 5);
+           break;
+       case 19200:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 6);
+           break;
+       case 38400:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 7);
+           break;
+       case 57600:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 8);
+           break;
+       case 115200:
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 9);
+           break;
+       case 0:
+           /* no previous setting, use 9600 as default */
+           gtk_combo_box_set_active(GTK_COMBO_BOX(Combo), 5);
+        default:
+            /* custom baudrate */
+            chaine = g_strdup_printf("%d", config.vitesse);
+            gtk_entry_set_text(GTK_ENTRY(gtk_bin_get_child (GTK_BIN (Combo))), chaine);
+            g_free(chaine);
+    }
 
     //validate input text (digits only)
     g_signal_connect(GTK_ENTRY(GTK_BIN(Combo)->child),
