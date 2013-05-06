@@ -1,0 +1,714 @@
+# Czech translations for gtkterm package
+# Traduction anglaise du package gtkterm.
+# Copyright (C) 2003 Julien Schmitt
+# This file is distributed under the same license as the gtkterm package.
+# Martin Stejskal <martin.stej@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkterm 0.99.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-14 20:44+0100\n"
+"PO-Revision-Date: 2003-03-08 00:47+0100\n"
+"Last-Translator: Martin Stejskal <martin.stej@gmail.com>\n"
+"Language-Team: Czech \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/buffer.c:92
+msgid "ERROR : Buffer is not initialized !\n"
+msgstr "CHyba : Buffer není inicializován !\n"
+
+#: src/cmdline.c:36
+#, c-format
+msgid ""
+"\n"
+"GTKTerm version %s\n"
+msgstr ""
+"\n"
+"Verze GTKTermu: %s\n"
+
+#: src/cmdline.c:37
+msgid "\t (c) Julien Schmitt\n"
+msgstr "\t (c) Julien Schmitt\n"
+
+#: src/cmdline.c:38
+msgid "\t https://fedorahosted.org/gtkterm/\n"
+msgstr "\t https://fedorahosted.org/gtkterm/n"
+
+#: src/cmdline.c:39
+msgid ""
+"\n"
+"This program is released under the terms of the GPL V.2\n"
+msgstr ""
+"\n"
+"Tento program je distribuován pod licencí GPL V.2\n"
+
+#: src/cmdline.c:40
+msgid "\t ** Use at your own risks ! **\n"
+msgstr "\t ** Použití na vlastní nebezpečí ! **\n"
+
+#: src/cmdline.c:41
+msgid ""
+"\n"
+"Command line options\n"
+msgstr ""
+"\n"
+"Nastavení příkazové řádky\n"
+
+#: src/cmdline.c:42
+msgid "--help or -h : this help screen\n"
+msgstr "--help nebo -h : zobrazí tuto nápovědu\n"
+
+#: src/cmdline.c:43
+msgid "--config <configuration> or -c : load configuration\n"
+msgstr "--config <nastavení> nebo -c : načte nastavení programu uložené v"
+"souboru \"nastaveni\"\n"
+
+#: src/cmdline.c:44
+msgid "--port <device> or -p : serial port device (default /dev/ttyS0)\n"
+msgstr "--port <zařízení> nebo -p : sériový port (výchozí je /dev/ttyS0)\n"
+
+#: src/cmdline.c:45
+msgid "--speed <speed> or -s : serial port speed (default 9600)\n"
+msgstr "--speed <rychlost> nebo -s : nastavení přenosové rychlosti (výchozí je"
+"9600)\n"
+
+#: src/cmdline.c:46
+msgid "--bits <bits> or -b : number of bits (default 8)\n"
+msgstr "--bits <počet_bitů> nebo -b : počet bitů v jednom rámci (výchozí je"
+"8 bitů))\n"
+
+#: src/cmdline.c:47
+msgid "--stopbits <stopbits> or -t : number of stopbits (default 1)\n"
+msgstr "--stopbits <počet_stop_bitů> nebo -t : počet stopbitů (výchozí je 1)\n"
+
+#: src/cmdline.c:48
+msgid "--parity <odd | even> or -a : partity (default none)\n"
+msgstr "--parity <odd | even> nebo -a : zabezpečení paritou: lichá (odd),"
+"sudá (even) (výchozí je bez paritního bitu)\n"
+
+#: src/cmdline.c:49
+msgid "--flow <Xon | CTS> or -w : flow control (default none)\n"
+msgstr "--flow <Xon | CTS> nebo -w : ovládání toku dat (výchozí je vypnuto)\n"
+
+#: src/cmdline.c:50
+msgid "--delay <ms> or -d : end of line delay in ms (default none)\n"
+msgstr "--delay <ms> nebo -d : zpoždění pro znak \"konec řádku\" (výchozí je"
+"vypnuto)\n"
+
+#: src/cmdline.c:51
+msgid ""
+"--char <char> or -r : wait for a special char at end of line (default none)\n"
+msgstr ""
+"--char <char> nebo -r : čeká na speciální znak na konci řádku (výchozí je"
+"vypnuto)\n"
+
+#: src/cmdline.c:52
+msgid "--file <filename> or -f : default file to send (default none)\n"
+msgstr ""
+"--file <nazev_souboru> nebo -f : odešle soubor jako data (výchozí je"
+"vypnuto)\n"
+
+#: src/cmdline.c:53
+msgid "--echo or -e : switch on local echo\n"
+msgstr "--echo nebo -e : zapne echo na místním terminálu\n"
+
+#: src/cmdline.c:144
+msgid "Misunderstood command line option\n"
+msgstr "Nesprávný argument\n"
+
+#: src/config.c:173
+msgid ""
+"No valid serial device found in /dev, sorry !\n"
+"You should have at least one of these :\n"
+"/dev/ttyS*\n"
+"/dev/tts/*\n"
+"/dev/ttyUSB*\n"
+"/dev/usb/tts/*\n"
+msgstr ""
+"Nenalezeno žádné vhodné zařízení v adresáři /dev, sorry !\n"
+"Pro správnou funkci by jste měli mít jedno z těchto zařízení :\n"
+"/dev/ttyS*\n"
+"/dev/tts/*\n"
+"/dev/ttyUSB*\n"
+"/dev/usb/tts/*\n"
+
+#: src/config.c:178
+msgid "Configuration"
+msgstr "Nastavení"
+
+#: src/config.c:181
+msgid "Serial port"
+msgstr "Sériový port"
+
+#: src/config.c:187
+msgid "Port :"
+msgstr "Port :"
+
+#: src/config.c:189
+msgid "Speed :"
+msgstr "Rychlost :"
+
+#: src/config.c:191
+msgid "Parity :"
+msgstr "Parita :"
+
+#: src/config.c:252
+msgid "Bits :"
+msgstr "Bity :"
+
+#: src/config.c:254
+msgid "Stopbits :"
+msgstr "Stop bity:"
+
+#: src/config.c:256
+msgid "Flow control :"
+msgstr "Ovládání toku dat :"
+
+#: src/config.c:317
+msgid "ASCII file transfer"
+msgstr "Přenos ASCII souboru"
+
+#: src/config.c:323
+msgid "End of line delay (milliseconds) :"
+msgstr "Zpoždění pro symbol konec řádku (milisekundy) :"
+
+#: src/config.c:337
+msgid "Wait for this special character before passing to next line :"
+msgstr "Před skokem na další řádek čekat na speciální symbol :"
+
+#: src/config.c:395 src/config.c:715
+msgid "No open port"
+msgstr "Žádný otevřený port"
+
+#: src/config.c:421
+msgid "Font selection"
+msgstr "Výběr písma"
+
+#: src/config.c:464
+msgid "Load configuration"
+msgstr "Načíst nastavení"
+
+#: src/config.c:470
+msgid "Delete configuration"
+msgstr "Smazat nastavení"
+
+#: src/config.c:501
+msgid "Cannot read configuration file !\n"
+msgstr "Nemohu přečíst konfigurační soubor !\n"
+
+#: src/config.c:507
+msgid "Configurations"
+msgstr "Nastavení"
+
+#: src/config.c:572
+msgid "Save configuration"
+msgstr "Uložit nastavení"
+
+#: src/config.c:581
+msgid "Configuration name : "
+msgstr "Název tohoto nastavení : "
+
+#: src/config.c:626
+msgid "Cannot overwrite section !"
+msgstr "Nemohu přepsat sekci !"
+
+#: src/config.c:631
+msgid "Cannot read configuration file !"
+msgstr "Nemohu přečíst konfigurační soubor !"
+
+#: src/config.c:641
+#, c-format
+msgid "Configuration [%s] saved\n"
+msgstr "Nastavení [%s] uloženo\n"
+
+#: src/config.c:667
+msgid "Warning !"
+msgstr "Varování !"
+
+#: src/config.c:676
+#, c-format
+msgid ""
+"\n"
+"Section [%s] already exists\n"
+"Do you want to overwrite it ?\n"
+msgstr ""
+"\n"
+"Sekce [%s] již existuje\n"
+"Opravdu ji chcete přepsat ?\n"
+
+#: src/config.c:734
+msgid "Cannot delete section !"
+msgstr "Nemohu smazat sekci !"
+
+#: src/config.c:905
+#, c-format
+msgid "No section \"%s\" in configuration file\n"
+msgstr "Žádná sekce \"%s\" v konfiguračním souboru\n"
+
+#: src/config.c:942
+#, c-format
+msgid ""
+"Unknown speed : %d bauds\n"
+"Falling back to default speed : %d bauds\n"
+msgstr ""
+"Neznámá rychlost : %d baudů\n"
+"Vracím přenosovou rychlost zpět na : %d baudů\n"
+
+#: src/config.c:950
+#, c-format
+msgid ""
+"Impossible stopbits number : %d\n"
+"Falling back to default stop bits number : %d\n"
+msgstr ""
+"Nekorektní počet stop bitů : %d\n"
+"Vracím počet stop bitů na výchozí hodnotu : %d\n"
+
+#: src/config.c:958
+#, c-format
+msgid ""
+"Impossible bits number : %d\n"
+"Falling back to default stop bits : %d\n"
+msgstr ""
+"Nekorektní počet bitů : %d\n"
+"Vracím počet bitů na výchozí hodnotu : %d\n"
+
+#: src/config.c:966
+#, c-format
+msgid ""
+"Impossible delay : %d ms\n"
+"Falling back to default delay : %d ms\n"
+msgstr ""
+"Příliš velké zpoždění : %d ms\n"
+"Vracím nastavení na výchozí hodnotu : %d ms\n"
+
+#: src/config.c:996
+#, c-format
+msgid ""
+"Configuration file (%s) with\n"
+"[default] configuration has been created.\n"
+msgstr ""
+"Byl vytvořen konfigurační soubor %s\n"
+" s výchozím nastavením. Název aktuální konfigurace je [default].\n"
+
+#: src/config.c:1228
+#, c-format
+msgid "Cannot find section %s\n"
+msgstr "Nemohu najít sekci %s\n"
+
+#: src/config.c:1265
+#, fuzzy
+msgid "Terminal configuration"
+msgstr "Nastavení terminálu"
+
+#: src/fichier.c:74
+msgid "File selection"
+msgstr "Výběr souboru"
+
+#: src/fichier.c:104
+msgid "Error opening file\n"
+msgstr "Chyba při otevírání souboru\n"
+
+#: src/fichier.c:112
+#, c-format
+msgid "%s : transfer in progress..."
+msgstr "%s : přenáším data..."
+
+#: src/fichier.c:129
+msgid "%v / %u Kb (%p %%)"
+msgstr "%v / %u Kb (%p %%)"
+
+#: src/fichier.c:135
+msgid "%v / %u bytes (%p %%)"
+msgstr "%v / %u bajtů (%p %%)"
+
+#: src/fichier.c:140
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/fichier.c:156
+#, c-format
+msgid "Cannot read file %s : %s\n"
+msgstr "Nemohu přečíst soubor %s : %s\n"
+
+#: src/fichier.c:205
+#, c-format
+msgid "Cannot write file %s\n"
+msgstr "Nemohu uložit soubor %s\n"
+
+#: src/fichier.c:293
+msgid "File error\n"
+msgstr "Něco je špatně se souborem\n"
+
+#: src/fichier.c:301
+#, c-format
+msgid "Cannot open file %s : %s\n"
+msgstr "Nemohu otevřít soubor %s : %s\n"
+
+#: src/macros.c:143
+#, c-format
+msgid "Macro \"%s\" sent !"
+msgstr "Makro \"%s\" odesláno !"
+
+#: src/macros.c:274
+msgid "Shortcut"
+msgstr "Zkratka"
+
+#: src/macros.c:426
+msgid "Help on macros"
+msgstr "Nápověda k makrům"
+
+#: src/macros.c:433
+msgid ""
+"The \"action\" field of a macro is the data to be sent on the port. Text can "
+"be entered, but also special chars, like \\n, \\t, \\r, etc. You can also "
+"enter hexadecimal data preceded by a '\\'. The hexadecimal data should not "
+"begin with a letter (eg. use \\0FF and not \\FF)\n"
+"Examples :\n"
+"\t\"Hello\\n\" sends \"Hello\" followed by a Line Feed\n"
+"\t\"Hello\\0A\" does the same thing but the LF is entered in hexadecimal"
+msgstr ""
+"V sloupci \"action\" jsou data jednotlivých maker, která mají být odeslána."
+"V textu mohou být i speciální znaky jako \\n, \\t, \\r atd. Je možné zadat"
+"data v hexadecimální podobě, ale před touto hodnotou musí být znak '\\'."
+"Hexadecimální číslo by nemělo začínat znakem (př.: \\0FF je správný zápis,"
+"ale \\FF je už nesprávný)\n"
+"Příklady :\n"
+"\t\"Ahoj\\n\" odešle \"Ahoj\" a přidá znak \"nový řádek\" (LF - line feed,"
+"new line)\n"
+"\t\"Ahoj\\0A\" odešle prakticky to samé, ale rozdíl je v tom, že speciální"
+"znak je nyní zadán jako hexadecimální číslo\n"
+
+#: src/macros.c:460
+msgid "Configure Macros"
+msgstr "Mastavení maker"
+
+#: src/macros.c:496
+msgid "_Add"
+msgstr "_Přidej"
+
+#: src/macros.c:500
+msgid "_Delete"
+msgstr "_Smaž"
+
+#: src/macros.c:504
+msgid "_Capture Shortcut"
+msgstr "_Zaznamenat zkratku"
+
+#: src/parsecfg.c:335
+#, c-format
+msgid "Cannot open configuration file `%s'.\n"
+msgstr "Nemohu otevřít konfigurační soubor `%s'.\n"
+
+#: src/parsecfg.c:338
+#, c-format
+msgid "Cannot create configuration file `%s'.\n"
+msgstr "Nemohu vytvořit konfigurační soubor `%s'.\n"
+
+#: src/parsecfg.c:341
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Syntax error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Chybná syntaxe\n"
+
+#: src/parsecfg.c:344
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Unrecognized parameter\n"
+msgstr ""
+"%s(%d): %s\n"
+"Nemohu rozpoznat parametr\n"
+
+#: src/parsecfg.c:347
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Internal error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Vnitřní chyba\n"
+
+#: src/parsecfg.c:350
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Invalid number\n"
+msgstr ""
+"%s(%d): %s\n"
+"Neplatné číslo\n"
+
+#: src/parsecfg.c:353
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Out of range\n"
+msgstr ""
+"%s(%d): %s\n"
+"Mimo rozsah\n"
+
+#: src/parsecfg.c:356
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Cannot allocate memory.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Nemohu alokovat paměť\n"
+
+#: src/parsecfg.c:359
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"It must be specified TRUE or FALSE.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Musí být specifikováno TRUE (1 - pravda) nebo FALSE (0 - lež).\n"
+
+#: src/parsecfg.c:362
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"The section name is already used.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Takové jméno pro sekci už existuje\n"
+
+#: src/parsecfg.c:365
+#, c-format
+msgid ""
+"%s(%d)\n"
+"There is no closing brace.\n"
+msgstr ""
+"%s(%d)\n"
+"Chybí ukončovací závorky.\n"
+
+#: src/parsecfg.c:370
+#, c-format
+msgid ""
+"%s(%d): %s\n"
+"Unexplained error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Neznámá chyba\n"
+
+#: src/serie.c:212
+#, c-format
+msgid "Cannot open %s : %s\n"
+msgstr "Nemohu otevřít%s : %s\n"
+
+#: src/serie.c:357 src/serie.c:392
+msgid "Control signals read"
+msgstr "Řídicí signály byly přečteny"
+
+#: src/serie.c:369
+msgid "DTR write"
+msgstr "Zápis DTR"
+
+#: src/serie.c:379
+msgid "RTS write"
+msgstr "Zápis RTS"
+
+#: src/serie.c:470
+msgid "Lockfile is stale. Overriding it..\n"
+msgstr "Vypadá to, že sériový port byl používán, ale už není. Obcházím to...\n"
+
+#: src/serie.c:480
+#, c-format
+msgid "Device %s is locked.\n"
+msgstr "Zařízení %s je používáno.\n"
+
+#: src/serie.c:492
+msgid "Cannot create lockfile. Sorry.\n"
+msgstr "Nemohu vytvořit zamykací soubor (lockfile). Sorry\n"
+
+#: src/widgets.c:122
+msgid "/_File"
+msgstr "_Soubor"
+
+#: src/widgets.c:123
+msgid "/File/Clear screen"
+msgstr "/Soubor/Smazat obrazovku"
+
+#: src/widgets.c:124
+msgid "/File/Send _raw file"
+msgstr "/Soubor/_Odeslat binární soubor"
+
+#: src/widgets.c:125
+msgid "/File/_Save raw file"
+msgstr "/Soubor/_Uložit binární soubor"
+
+#: src/widgets.c:126
+msgid "/File/Separator"
+msgstr "/SOubor/Oddělovač"
+
+#: src/widgets.c:127
+msgid "/File/E_xit"
+msgstr "/SOubor/_Ukončit"
+
+#: src/widgets.c:128
+msgid "/_Configuration"
+msgstr "/_Nastavení"
+
+#: src/widgets.c:129
+msgid "/Configuration/_Port"
+msgstr "/Nastavení/_Port"
+
+#: src/widgets.c:130
+#, fuzzy
+msgid "/Configuration/_Main window"
+msgstr "/Nastavení/_Makra"
+
+#: src/widgets.c:131
+msgid "/Configuration/Local _echo"
+msgstr "/Nastavení/_Lokální echo"
+
+#: src/widgets.c:132
+#, fuzzy
+msgid "/Configuration/_CR LF auto"
+msgstr "/Nastavení/_CR LF auto"
+
+#: src/widgets.c:133
+msgid "/Configuration/_Macros"
+msgstr "/Nastavení/_Makra"
+
+#: src/widgets.c:134
+msgid "/Configuration/Separator"
+msgstr "/Nastavení/Oddělovač"
+
+#: src/widgets.c:135
+msgid "/Configuration/_Load configuration"
+msgstr "/Nastavení/_Načíst nastavení"
+
+#: src/widgets.c:136
+msgid "/Configuration/_Save configuration"
+msgstr "/Configuration/_Uložit nastavení"
+
+#: src/widgets.c:137
+msgid "/Configuration/_Delete configuration"
+msgstr "/Configuration/_Smazat nastavení"
+
+#: src/widgets.c:138
+msgid "/Control _signals"
+msgstr "/Řídící _signály"
+
+#: src/widgets.c:139
+msgid "/Control signals/Send break"
+msgstr "/Řídící signály/Poslat break"
+
+#: src/widgets.c:140
+msgid "/Control signals/Toggle DTR"
+msgstr "/Řídící signály/Změnit DTR"
+
+#: src/widgets.c:141
+msgid "/Control signals/Toggle RTS"
+msgstr "/Řídící signály/Změnit RTS"
+
+#: src/widgets.c:142
+msgid "/_View"
+msgstr "/_Pohled"
+
+#: src/widgets.c:143
+msgid "/View/_ASCII"
+msgstr "/Pohled/_ASCII"
+
+#: src/widgets.c:144
+msgid "/View/_Hexadecimal"
+msgstr "/Pohled/_Hexadecimální"
+
+#: src/widgets.c:145
+msgid "/View/Hexadecimal _chars"
+msgstr "/Pohled/Hexadecimální _znaky"
+
+#: src/widgets.c:146
+msgid "/View/Hexadecimal chars/_8"
+msgstr "/Pohled/Hexadecimální znaky/_8"
+
+#: src/widgets.c:147
+msgid "/View/Hexadecimal chars/1_0"
+msgstr "/Pohled/Hexadecimální znaky/1_0"
+
+#: src/widgets.c:148
+msgid "/View/Hexadecimal chars/_16"
+msgstr "/Pohled/Hexadecimální znaky/_16"
+
+#: src/widgets.c:149
+msgid "/View/Hexadecimal chars/_24"
+msgstr "/Pohled/Hexadecimální znaky/_24"
+
+#: src/widgets.c:150
+msgid "/View/Hexadecimal chars/_32"
+msgstr "/Pohled/Hexadecimální znaky/_32"
+
+#: src/widgets.c:151
+msgid "/View/Show _index"
+msgstr "/Pohled/Zobraz _index"
+
+#: src/widgets.c:152
+msgid "/View/Separator"
+msgstr "/Pohled/Oddělovač"
+
+#: src/widgets.c:153
+msgid "/View/_Send hexadecimal data"
+msgstr "/Pohled/_Odešli hexadecimální data"
+
+#: src/widgets.c:154
+msgid "/_Help"
+msgstr "_Nápověda"
+
+#: src/widgets.c:155
+msgid "/Help/_About..."
+msgstr "/Nápověda/_O programu..."
+
+#: src/widgets.c:307
+msgid "Hexadecimal data to send (separator : ';' or space) : "
+msgstr "Hexadecimální data k odeslání (oddělovač : ';' nebo mezera) : "
+
+#: src/widgets.c:502
+msgid "About..."
+msgstr "O programu..."
+
+#: src/widgets.c:510
+#, c-format
+msgid ""
+"\n"
+" <big><i> GTKTerm V. %s </i></big> \n"
+"\n"
+"\t(c) Julien Schmitt\n"
+"\thttps://fedorahosted.org/gtkterm/n"
+msgstr ""
+"\n"
+" <big><i> GTKTerm V. %s </i></big> \n"
+"\n"
+"\t(c) Julien Schmitt \n"
+"\thttps://fedorahosted.org/gtkterm/n"
+
+#: src/widgets.c:554
+msgid "Break signal sent !"
+msgstr "Signál break odeslán !"
+
+#: src/widgets.c:636
+#, c-format
+msgid "\"%s\" : %d byte(s) sent !"
+msgstr "\"%s\" : %d bajtů(s) odesláno(s) !"
+
+#~ msgid "/Configuration/Local echo"
+#~ msgstr "/Nastavení/_Lokální echo"
+
+#~ msgid "/View/ASCII"
+#~ msgstr "/Pohled/ASCII"
+
+#~ msgid "/View/Hexadecimal"
+#~ msgstr "/Pohled/Hexadecimálně"
+
+#~ msgid "/View/Hexadecimal chars"
+#~ msgstr "/Pohled/_Hexadecimální znaky"
+
+#~ msgid "/View/Show index"
+#~ msgstr "/Pohled/Zobraz index"
