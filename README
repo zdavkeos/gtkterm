@@ -8,7 +8,7 @@
                        Currently Maintained At:
                   https://github.com/zdavkeos/gtkterm
 
-Version 0.99.7
+Version 0.99.99
 
 Notice:
     This program is free software: you can redistribute it and/or modify
@@ -63,19 +63,18 @@ limitation to user space programs.
 
 Building:
  GtkTerm has a few dependencies-
-* Gtk+2.0 (version 2.6 or higher)
-* vte (version 0.20 or higher)
+* CMake (version 3.4 or higher)
+* Gtk+3 (version 3.9 or higher)
+* vte (version 0.29 or higher)
 * intltool (version 0.40.0 or higher)
 
  Once these dependencies are installed, most people should simply run:
-  ./configure
+  mkdir build
+  cmake ..
   make
 
  And to install:
   make install
 
- If you wish to install Gtkterm someplace other than the default directory, use:
-   ./configure --prefix=/install/directory
- Then build and install as usual.
 
  See INSTALL for more detailed build and install options.

@@ -14,6 +14,8 @@
 #ifndef LOGGING_H_
 #define LOGGING_H_
 
+#include <gtk/gtk.h>
+
 void logging_start(GtkAction *action, gpointer data);
 void logging_pause_resume(void);
 void logging_stop(void);

@@ -27,9 +27,7 @@
 #include "parsecfg.h"
 #include "buffer.h"
 #include "macros.h"
-#include "auto_config.h"
 
-#include <config.h>
 #include <glib/gi18n.h>
 
 int main(int argc, char *argv[])

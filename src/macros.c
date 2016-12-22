@@ -25,7 +25,6 @@
 #include "widgets.h"
 #include "macros.h"
 
-#include <config.h>
 #include <glib/gi18n.h>
 
 enum

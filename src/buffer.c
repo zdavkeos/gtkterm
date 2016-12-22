@@ -24,7 +24,6 @@
 #include "i18n.h"
 #include "serie.h"
 
-#include <config.h>
 #include <glib/gi18n.h>
 
 static char *buffer = NULL;

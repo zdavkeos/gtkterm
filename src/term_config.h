@@ -46,7 +46,6 @@ struct configuration_port {
 };
 
 typedef struct {
-  gboolean transparency;
   gboolean show_cursor;
   gint rows;
   gint columns;

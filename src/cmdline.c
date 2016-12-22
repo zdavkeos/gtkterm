@@ -24,10 +24,8 @@
 
 #include "term_config.h"
 #include "fichier.h"
-#include "auto_config.h"
 #include "i18n.h"
 
-#include <config.h>
 #include <glib/gi18n.h>
 
 extern struct configuration_port config;

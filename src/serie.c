@@ -41,7 +41,6 @@
 #include "buffer.h"
 #include "i18n.h"
 
-#include <config.h>
 #include <glib/gi18n.h>
 
 #ifdef HAVE_LINUX_SERIAL_H
