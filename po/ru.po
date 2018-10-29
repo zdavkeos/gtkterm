@@ -13,8 +13,8 @@ msgstr ""
 "X-Poedit-Country: RUSSIA\n"
 "X-Poedit-SourceCharset: iso-8859-2\n"
 
-msgid "\t (c) Julien Schmitt - julien@jls-info.com\n"
-msgstr "\t (c) Julien Schmitt - julien@jls-info.com\n"
+msgid "\t (c) Julien Schmitt\n"
+msgstr "\t (c) Julien Schmitt\n"
 
 msgid "\t ** Use at your own risks ! **\n"
 msgstr "\t ** Используйте с осторожностью ! **\n"
