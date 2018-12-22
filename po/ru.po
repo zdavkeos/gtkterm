@@ -1,0 +1,609 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkterm 0.99.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-28 10:17+0100\n"
+"PO-Revision-Date: 2013-10-28 21:17+0100\n"
+"Last-Translator: PuppyRus Team <www.puppyrus.org>\n"
+"Language-Team: PuppyRus Team <www.puppyrus.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: iso-8859-2\n"
+
+msgid "\t (c) Julien Schmitt\n"
+msgstr "\t (c) Julien Schmitt\n"
+
+msgid "\t ** Use at your own risks ! **\n"
+msgstr "\t ** Используйте с осторожностью ! **\n"
+
+msgid ""
+"\n"
+"Command line options\n"
+msgstr ""
+"\n"
+"Параметры командной строки\n"
+
+msgid ""
+"\n"
+"GTKTerm version %s\n"
+msgstr ""
+"\n"
+"GTKTerm версии %s\n"
+
+msgid ""
+"\n"
+"This program is released under the terms of the GPL V.2\n"
+msgstr ""
+"\n"
+"Программа распространяется под лицензией GPL V.2\n"
+
+msgid "\"%s\" : %d byte(s) sent!"
+msgstr "\"%s\" : %d байт(с) отправлено!"
+
+msgid "%s : transfer in progress..."
+msgstr "%s : передача данных..."
+
+msgid ""
+"%s(%d)\n"
+"There is no closing brace.\n"
+msgstr ""
+"%s(%d)\n"
+"Нет закрывающей скобки.\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Cannot allocate memory.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Недостаточно памяти.\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Internal error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Внутренняя ошибка\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Invalid number\n"
+msgstr ""
+"%s(%d): %s\n"
+"Неправильный номер\n"
+
+msgid ""
+"%s(%d): %s\n"
+"It must be specified TRUE or FALSE.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Вы должны указать TRUE или FALSE.\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Out of range\n"
+msgstr ""
+"%s(%d): %s\n"
+"За пределами диапазона\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Syntax error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Синаксическая ошибка\n"
+
+msgid ""
+"%s(%d): %s\n"
+"The section name is already used.\n"
+msgstr ""
+"%s(%d): %s\n"
+"Имя секции уже используется.\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Unexplained error\n"
+msgstr ""
+"%s(%d): %s\n"
+"Необъяснимая ошибка\n"
+
+msgid ""
+"%s(%d): %s\n"
+"Unrecognized parameter\n"
+msgstr ""
+"%s(%d): %s\n"
+"Нераспознанный параметр\n"
+
+msgid "--bits <bits> or -b : number of bits (default 8)\n"
+msgstr "--bits <бит> или -b : число бит данных (по умолчанию 8)\n"
+
+msgid ""
+"--char <char> or -r : wait for a special char at end of line (default none)\n"
+msgstr ""
+"--char <символ> или -r : ожидать специальный символ окончания строки (по "
+"умолчанию выкл)\n"
+
+msgid "--config <configuration> or -c : load configuration\n"
+msgstr "--config <файл_настроек> или -c : использовать настройки из файла\n"
+
+msgid "--delay <ms> or -d : end of line delay in ms (default none)\n"
+msgstr ""
+"--delay <мс> или -d : задержка в мс после каждой строки (по умолчанию выкл)\n"
+
+msgid "--echo or -e : switch on local echo\n"
+msgstr "--echo или -e : отображать введенные символы на экране\n"
+
+msgid "--file <filename> or -f : default file to send (default none)\n"
+msgstr ""
+"--file <имя_файла> или -f : имя файла для отправки (по умолчанию нет)\n"
+
+msgid "--flow <Xon | RTS | RS485> or -w : flow control (default none)\n"
+msgstr ""
+"--flow <Xon | RTS | RS485> или -w : управление потоком (по умолчанию выкл)\n"
+
+msgid "--help or -h : this help screen\n"
+msgstr "--help или -h : показать эту справку\n"
+
+msgid "--parity <odd | even> or -a : partity (default none)\n"
+msgstr "--parity <odd | even> или -a : четность (по умолчанию выкл)\n"
+
+msgid "--port <device> or -p : serial port device (default /dev/ttyS0)\n"
+msgstr ""
+"--port <устройство> или -p : последовательный порт (по умолчанию /dev/"
+"ttyS0)\n"
+
+msgid ""
+"--rts_time_after <ms> or -y : for rs485, time in ms after transmit with rts "
+"on\n"
+msgstr ""
+"--rts_time_after <ms> или -y : для rs485, время в ms после передачи с rts "
+"on\n"
+
+msgid ""
+"--rts_time_before <ms> or -x : for rs485, time in ms before transmit with "
+"rts on\n"
+msgstr ""
+"--rts_time_before <ms> или -x : для rs485, время в ms перед установкой rts "
+"on\n"
+
+msgid "--speed <speed> or -s : serial port speed (default 9600)\n"
+msgstr "--speed <скорость> или -s : скорость порта (по умолчанию 9600)\n"
+
+msgid "--stopbits <stopbits> or -t : number of stopbits (default 1)\n"
+msgstr "--stopbits <стоп_бит> или -t : число стоповых бит (по умолчанию 1)\n"
+
+msgid "/Configuration/Local _echo"
+msgstr "/Параметры/Локальное _эхо"
+
+msgid "/Configuration/Separator"
+msgstr "/Параметры/_Разделитель"
+
+msgid "/Configuration/_CR LF auto"
+msgstr "/Параметры/_CR LF auto"
+
+msgid "/Configuration/_Delete configuration"
+msgstr "/Параметры/_Удалить конфигурацию"
+
+msgid "/Configuration/_Load configuration"
+msgstr "/Параметры/_Загрузить конфигурацию"
+
+msgid "/Configuration/_Macros"
+msgstr "/Параметры/_Макрос"
+
+msgid "/Configuration/_Main window"
+msgstr "/Параметры/_Окно программы"
+
+msgid "/Configuration/_Port"
+msgstr "/Параметры/_Порт"
+
+msgid "/Configuration/_Save configuration"
+msgstr "/Параметры/_Сохранить конфигурацию"
+
+msgid "/Control _signals"
+msgstr "/_Сигналы контроля"
+
+msgid "/Control signals/Send break"
+msgstr "/Сигналы контроля/Послать Break"
+
+msgid "/Control signals/Toggle DTR"
+msgstr "/Сигналы контроля/Переключить DTR "
+
+msgid "/Control signals/Toggle RTS"
+msgstr "/Сигналы контроля/Переключить RTS"
+
+msgid "/Edit/Copy _All"
+msgstr "/Правка/Копировать Все"
+
+msgid "/Edit/_Copy"
+msgstr "/Правка/_Копировать"
+
+msgid "/Edit/_Paste"
+msgstr "/Правка/_Вставить"
+
+msgid "/File/Clear screen"
+msgstr "/Файл/Очистить экран"
+
+msgid "/File/E_xit"
+msgstr "/Файл/В_ыход"
+
+msgid "/File/Send _raw file"
+msgstr "/Файл/Отправить Raw файл"
+
+msgid "/File/Separator"
+msgstr "/Файл/_Разделитель"
+
+msgid "/File/_Save raw file"
+msgstr "/Файл/Сохранить Raw файл"
+
+msgid "/Help/_About..."
+msgstr "/Справка/_О программе..."
+
+msgid "/Log/Clear"
+msgstr "/Лог/Очистить"
+
+msgid "/Log/Pause"
+msgstr "/Лог/Пауза"
+
+msgid "/Log/Stop"
+msgstr "/Лог/Стоп"
+
+msgid "/Log/To File..."
+msgstr "/Лог/Сохранить в файл..."
+
+msgid "/View/Hexadecimal _chars"
+msgstr "/Вид/Hex-_символы"
+
+msgid "/View/Hexadecimal chars/1_0"
+msgstr "/Вид/Hex-_символы/1_0"
+
+msgid "/View/Hexadecimal chars/_16"
+msgstr "/Вид/Hex_символы/_16"
+
+msgid "/View/Hexadecimal chars/_24"
+msgstr "/Вид/Hex_символы/_24"
+
+msgid "/View/Hexadecimal chars/_32"
+msgstr "/Вид/Hex_символы/_32"
+
+msgid "/View/Hexadecimal chars/_8"
+msgstr "/Вид/Hex-_символы/_8"
+
+msgid "/View/Separator"
+msgstr "/Вид/_Разделитель"
+
+msgid "/View/Show _index"
+msgstr "/Вид/Показать _индекс"
+
+msgid "/View/_ASCII"
+msgstr "/Вид/_ASCII"
+
+msgid "/View/_Hexadecimal"
+msgstr "/Вид/_Шестнадцатеричный (Hex)"
+
+msgid "/View/_Send hexadecimal data"
+msgstr "/Вид/_Отправить Hex-данные"
+
+msgid "/_Configuration"
+msgstr "/_Параметры"
+
+msgid "/_Edit"
+msgstr "/_Правка"
+
+msgid "/_File"
+msgstr "/_Файл"
+
+msgid "/_Help"
+msgstr "/Справка"
+
+msgid "/_Log"
+msgstr "_Лог"
+
+msgid "/_View"
+msgstr "/_Вид"
+
+msgid "0 byte(s) sent!"
+msgstr "0 байт отправлено!"
+
+msgid "<b>Colors: </b>"
+msgstr "<b>Цвета: </b>"
+
+msgid "<b>Font selection: </b>"
+msgstr "<b>Шрифт: </b>"
+
+msgid "<b>Screen: </b>"
+msgstr "<b>Экран: </b>"
+
+msgid ""
+"<b>Section [%s] already exists.</b>\n"
+"\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"<b>Раздел [%s] уже существует.</b>\n"
+"\n"
+"Хотите перезаписать его?"
+
+msgid "<b>Transparency: </b>"
+msgstr "<b>Прозрачность: </b>"
+
+msgid "ASCII file transfer"
+msgstr "Передача ASCII-файла"
+
+msgid "About GtkTerm"
+msgstr "О программе..."
+
+msgid "Advanced Configuration Options"
+msgstr "Дополнительные настройки"
+
+msgid "Background color:"
+msgstr "Цвет фона:"
+
+msgid "Baud Rate:"
+msgstr "Скорость передачи:"
+
+msgid "Bits:"
+msgstr "Биты:"
+
+msgid "Break signal sent!"
+msgstr "Сигнал Break отправлен!"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Cannot create configuration file `%s'.\n"
+msgstr "Не удалось создать файл конфигурации\n"
+
+msgid "Cannot create lockfile. Sorry.\n"
+msgstr "Не удается создать lockfile.\n"
+
+msgid "Cannot delete section!"
+msgstr "Невозможно удалить раздел!"
+
+msgid "Cannot find section %s\n"
+msgstr "Невозможно найти раздел %s\n"
+
+msgid "Cannot open %s: %s\n"
+msgstr "Не удается открыть %s: %s\n"
+
+msgid "Cannot open configuration file `%s'.\n"
+msgstr "Не удалось открыть файл конфигурации\n"
+
+msgid "Cannot open file %s: %s\n"
+msgstr "Не удается открыть файл %s: %s\n"
+
+msgid "Cannot overwrite section!"
+msgstr "Невозможно перезаписать раздел!"
+
+msgid "Cannot read configuration file!"
+msgstr "Невозможно прочитать файл настройки!"
+
+msgid "Cannot read configuration file!\n"
+msgstr "Невозможно прочитать файл настройки!\n"
+
+msgid "Cannot read file %s : %s\n"
+msgstr "Не удается прочитать: %s : %s\n"
+
+msgid "Cannot write file %s\n"
+msgstr "Не удается записать %s\n"
+
+msgid "Configuration"
+msgstr "Настройка"
+
+msgid "Configuration [%s] saved\n"
+msgstr "Настройка [%s] сохранена\n"
+
+msgid ""
+"Configuration file (%s) with\n"
+"[default] configuration has been created.\n"
+msgstr ""
+"Создан файл настроек (%s)\n"
+"с настройками по умолчанию [default].\n"
+
+msgid "Configuration name: "
+msgstr "Название настройки: "
+
+msgid "Configurations"
+msgstr "Настройки"
+
+msgid "Configure Macros"
+msgstr "Параметры макроса"
+
+msgid "Control signals read"
+msgstr "Чтение сигналов контроля"
+
+msgid "DTR write"
+msgstr "Запись DTR"
+
+msgid "Delete configuration"
+msgstr "Удалить настройку"
+
+msgid "Device %s is locked.\n"
+msgstr "Устройство %s уже используется.\n"
+
+msgid "ERROR : Buffer is not initialized !\n"
+msgstr "ОШИБКА : буфер не инициализирован !\n"
+
+msgid "End of line delay (milliseconds):"
+msgstr "Задержка конца строки, мс:"
+
+msgid "Error opening file\n"
+msgstr "Ошибка открытия файла\n"
+
+msgid "Failed to log data\n"
+msgstr "Ошибка записи данных в журнал\n"
+
+msgid "File error\n"
+msgstr "Ошибка файла!\n"
+
+msgid "File selection"
+msgstr "Выбор файла"
+
+msgid "Filename error\n"
+msgstr "Ошибка имени файла\n"
+
+msgid "Flow control:"
+msgstr "Управление потоком:"
+
+msgid "Font selection"
+msgstr "Выбор шрифта"
+
+msgid "Help on macros"
+msgstr "Помощь по макросам"
+
+msgid "Hexadecimal data to send (separator : ';' or space) : "
+msgstr "Hex-данные для отправки (разделитель : ';' или пробел) :"
+
+msgid ""
+"Invalid delay: %d ms\n"
+"Falling back to default delay: %d ms\n"
+msgstr ""
+"Неправильная задержка: %d мс\n"
+"Используется значение по умолчанию: %d мс\n"
+
+msgid ""
+"Invalid number of bits: %d\n"
+"Falling back to default number of bits: %d\n"
+msgstr ""
+"Неправильное количество бит: %d\n"
+"Используется значение по умолчанию: %d\n"
+
+msgid ""
+"Invalid number of stop-bits: %d\n"
+"Falling back to default number of stop-bits number: %d\n"
+msgstr ""
+"Неправильное количество стоп-бит: %d\n"
+"Используется значение стоп-бит по умолчанию: %d\n"
+
+msgid "Load configuration"
+msgstr "Загрузить настройку"
+
+msgid "Lockfile is stale. Overriding it..\n"
+msgstr "Файл существует, заменяем..\n"
+
+msgid "Log file selection"
+msgstr "Выбор файла журнала"
+
+msgid "Macro \"%s\" sent !"
+msgstr "Макрос \"%s\" отправлен!"
+
+msgid "Misunderstood command line option\n"
+msgstr "Неправильный параметр командной строки\n"
+
+msgid "No open port"
+msgstr "Порт не открыт"
+
+msgid "No section \"%s\" in configuration file\n"
+msgstr "Раздела «%s» нет в файле настроек\n"
+
+msgid ""
+"No serial devices found!\n"
+"\n"
+"Searched the following paths:\n"
+"\t/dev/ttyS*\n"
+"\t/dev/tts/*\n"
+"\t/dev/ttyUSB*\n"
+"\t/dev/usb/tts/*\n"
+"\n"
+"Enter a different device path in the 'Port' box.\n"
+msgstr ""
+"Устройство последовательного порта не найдено!\n"
+"\n"
+"Были просмотрены следующие пути:\n"
+"\t/dev/ttyS*\n"
+"\t/dev/tts/*\n"
+"\t/dev/ttyUSB*\n"
+"\t/dev/usb/tts/*\n"
+"\n"
+"Укажите путь к другому устройству в поле «Порт».\n"
+
+msgid "Parity:"
+msgstr "Чётность:"
+
+msgid "Pause"
+msgstr "Пауза"
+
+msgid "Port:"
+msgstr "Порт:"
+
+msgid "RS485 half-duplex parameters (RTS signal used to send)"
+msgstr "RS485 полудуплекс (для отправки используется RTS)"
+
+msgid "RTS write"
+msgstr "Запись RTS"
+
+msgid "Resume"
+msgstr "Возобновить"
+
+msgid "Save configuration"
+msgstr "Сохранить настройку"
+
+msgid "Scrollback lines: "
+msgstr "Строк прокрутки: "
+
+msgid "Serial port"
+msgstr "Последовательный порт"
+
+msgid "Shortcut"
+msgstr "Shortcut"
+
+msgid "Show cursor"
+msgstr "Отображать курсор"
+
+msgid "Stopbits:"
+msgstr "Стоп-биты:"
+
+msgid "Terminal configuration"
+msgstr "Настройка окна"
+
+msgid "Text color:"
+msgstr "Цвет текста:"
+
+msgid ""
+"The \"action\" field of a macro is the data to be sent on the port. Text can "
+"be entered, but also special chars, like \\n, \\t, \\r, etc. You can also "
+"enter hexadecimal data preceded by a '\\'. The hexadecimal data should not "
+"begin with a letter (eg. use \\0FF and not \\FF)\n"
+"Examples :\n"
+"\t\"Hello\\n\" sends \"Hello\" followed by a Line Feed\n"
+"\t\"Hello\\0A\" does the same thing but the LF is entered in hexadecimal"
+msgstr ""
+"Поле \"action\" в макросе, это данные, которые будут отправлены в порт."
+"Обрабатывается текст и символы \\n, \\t, \\r,  и т.п.Шестнадцатеричные "
+"данные должны начинаться с '\\' но не должны иметь букву вначале.Правильная "
+"запись \\0FF , неправильная \\FF \n"
+"Пример: \n"
+"\t\"Hello\\n\" отправит \"Hello\" с символом конца строки\n"
+"\t\"Hello\\0A\" тоже самое что и предыдущий пример, но конец строки задан в "
+"шестнадцатеричном виде."
+
+msgid "Time with RTS 'on' after transmit (milliseconds):"
+msgstr "Время включения RTS после передачи, мс:"
+
+msgid "Time with RTS 'on' before transmit (milliseconds):"
+msgstr "Время включения RTS до передачи, мс:"
+
+msgid "Transparency enable"
+msgstr "Включить прозрачность"
+
+msgid ""
+"Unknown rate: %d baud\n"
+"May not be supported by all hardware"
+msgstr ""
+"Неизвестная скорость: %d бод\n"
+"Может не поддерживаться всем оборудованием"
+
+msgid "Wait for this special character before passing to next line:"
+msgstr "Ожидать специальный символ до передачи следующей строки:"
+
+msgid "Warning!"
+msgstr "Внимание!"
+
+msgid "_Add"
+msgstr "_Добавить"
+
+msgid "_Capture Shortcut"
+msgstr "_Захватить нажатия кнопок"
+
+msgid "_Delete"
+msgstr "_Удалить"
