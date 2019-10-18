@@ -14,17 +14,17 @@ See https://github.com/zdavkeos/gtkterm/wiki for documentation.
 
 ### Command line options
 
-> --help or -h : this help screen
-> --config <configuration> or -c : load configuration
-> --port <device> or -p : serial port device (default /dev/ttyS0)
-> --speed <speed> or -s : serial port speed (default 9600)
-> --bits <bits> or -b : number of bits (default 8)
-> --stopbits <stopbits> or -t : number of stopbits (default 1)
-> --parity <odd | even> or -a : parity (default none)
-> --flow <Xon | CTS> or -w : flow control (default none)
-> --delay <ms> or -d : end of line delay in ms (default none)
-> --char <char> or -r : wait for a special char at end of line (default none)
-> --file <filename> or -f : default file to send (default none)
+> --help or -h : this help screen  
+> --config <configuration> or -c : load configuration  
+> --port <device> or -p : serial port device (default /dev/ttyS0)  
+> --speed <speed> or -s : serial port speed (default 9600)  
+> --bits <bits> or -b : number of bits (default 8)  
+> --stopbits <stopbits> or -t : number of stopbits (default 1)  
+> --parity <odd | even> or -a : parity (default none)  
+> --flow <Xon | CTS> or -w : flow control (default none)  
+> --delay <ms> or -d : end of line delay in ms (default none)  
+> --char <char> or -r : wait for a special char at end of line (default none)  
+> --file <filename> or -f : default file to send (default none)  
 > --echo or -e : switch on local echo
 
 ### Keyboard shortcuts
@@ -34,13 +34,13 @@ are assigned to <ctrl><shift>, rather than just <ctrl>.  This allows
 the user to send keystrokes of the form <ctrl>X and not have Gtkterm
 intercept them.
 
-> <ctrl><shift>L -- Clear screen
-> <ctrl><shift>R -- Send file
-> <ctrl><shift>Q -- Quit 
-> <ctrl><shift>S -- Configure port
-> <ctrl><shift>V -- Paste
-> <ctrl><shift>C -- Copy
-> <ctrl>B	 -- Send break
+> <ctrl><shift>L -- Clear screen  
+> <ctrl><shift>R -- Send file  
+> <ctrl><shift>Q -- Quit  
+> <ctrl><shift>S -- Configure port  
+> <ctrl><shift>V -- Paste  
+> <ctrl><shift>C -- Copy  
+> <ctrl>B	 -- Send break  
 
 ## NOTES on RS485
 
